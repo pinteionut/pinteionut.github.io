@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+}
+
+.profile-image {
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+
+.profile-image-container {
+    text-align: left;
+    margin-left: 10px;
+    z-index: 2;
+}
+
+.title-container {
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    margin-top: 70px;
+    z-index: 1;
+}
+
+.labs-container {
+    margin-top: 230px;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    padding: 5px;
+}
+
+.lab-number {
+    margin-left: 20px;
+}
+
+.lab-exercise {
+    margin-left: 40px;
+}
