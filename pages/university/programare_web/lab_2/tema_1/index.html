@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <a href='../../../../university.html'>back</a>
+    <head>
+        <title>Books</title>
+        <meta charset='UTF-8'>
+        <link type='text/css' rel='stylesheet' href='style.css'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class='container border main'>
+            <div class='row first-row bg-secondary text-white'>
+                <div class='col-1 border text-center'>
+                    <div>Capitol</div>
+                </div>
+                <div class='col-11 container'>
+                    <div class='row'>
+                        <div class='col-1 border text-center'>Ord</div>
+                        <div class='col-11 border title'>Titlu</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src='default_books.js'></script>
+        <script src='script.js'></script>
+
+        <div class='add-form'>
+            <p>Atenție! Cărțile nou adăugate dispar la refresh.</p>
+            <form id='add-book-form'>
+                <div class='form-group container'>
+                    <div class='row'>
+                        <label class='col-2 border' for='chapter'>Capitol</label>
+                        <input type='text' class=' col-10 form-control' id='chapter' required></input>
+                    </div>
+                    <div class='row'>
+                        <label class='col-2 border' for='title'>Titlu</label>
+                        <input type='text' class=' col-10 form-control' id='title' required></input>
+                    </div>
+                    <div class='row'>
+                        <label class='col-2 border' for='author'>Autor</label>
+                        <input type='text' class=' col-10 form-control' id='author' required></input>
+                    </div>
+                    <div class='row'>
+                        <label class='col-2 border' for='publisher'>Editura</label>
+                        <input type='text' class=' col-10 form-control' id='publisher' required></input>
+                    </div>
+                    <div class='row'>
+                        <label class='col-2 border' for='year'>An</label>
+                        <input type='number' class=' col-10 form-control' id='year' required></input>
+                    </div>
+                    <div class='row'>
+                        <label class='col-2 border' for='imageLink'>Link imagine</label>
+                        <input type='url' class=' col-10 form-control' id='imageLink' required></input>
+                    </div>
+                    <div class='row'>
+                        <label class='col-2 border' for='link'>Link amazon</label>
+                        <input type='url' class=' col-10 form-control' id='link' required></input>
+                    </div>
+                    <div class='row'>
+                        <label class='col-2 border' for='price'>Preț</label>
+                        <input type='number' step='0.01' class=' col-10 form-control' id='price' required></input>
+                    </div>
+                    <button class="btn btn-secondary float-left" type='reset'>Resetează</button>
+                    <button class="btn btn-info float-left" id='add-test-book'>Populează cu date de test</button>
+                    <button class="btn btn-primary float-right" type="submit" id='add-book' required>Adaugă Carte!</button>
+                </div>
+            </form>
+        </div>
+        <footer></footer>
+    </body>
+</html>
