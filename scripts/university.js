@@ -10,6 +10,10 @@ const laboratoriesArray = [
                     {
                         name: 'Tema 1',
                         link: '../pages/university/programare_web/lab_2/tema_1/index.html'
+                    },
+                    {
+                        name: 'Tema 2',
+                        link: '../pages/university/programare_web/lab_2/tema_2/index.html'
                     }
                 ]
             }
@@ -52,7 +56,7 @@ const createAssigmentsElements = (laboratory) => {
         return `
         <div class='assignments-container'>
             <a href=${assigment.link}>
-                <p class="list-group-item-text assignment-number">${assigment.name}</p>
+                <p class="list-group-item-text assignment-number"><i class="fa fa-hand-o-right" aria-hidden="true"></i> ${assigment.name}</p>
             </a>
         </div>`
     })
@@ -61,7 +65,6 @@ const createAssigmentsElements = (laboratory) => {
 
 const bindCaretClick = () => {
     $('.expand-caret').click((e) => {
-        console.log(e.target)
         let targetLaboratoryName = $(e.target).parent().attr('name'); 
         let targetLaboratory = laboratoriesArray.find((laboratory) => laboratory.name == targetLaboratoryName);
         if (!targetLaboratory) {
