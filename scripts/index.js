@@ -8,7 +8,7 @@ const bindProfileImageChange = () => {
         $(targetImage.element.parent().parent()).css('backgroundColor', 'black')
     })
     
-    $('.project-card-image').mouseout(() => {
+    $('.active-project-card-image').mouseout(() => {
         targetImage.element.attr('src', `images/${targetImage.name}.png`);
         $(targetImage.element.parent().parent()).css('backgroundColor', 'white')
     })
