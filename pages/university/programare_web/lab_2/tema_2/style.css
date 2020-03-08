@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.information-type {
+    color: steelblue !important;
+    text-align: right;
+}
+
+.steelblue {
+    color: steelblue !important;
+}
+
+hr {
+    border-top: 1px solid steelblue;
+}
+
+div {
+    margin-top: 5px;
+}
+
+img {
+    border: 1px solid steelblue;
+    border-radius: 100px;
+    max-width: 100%;
+    max-height: 150px;
+    margin-top: 5px;
+}
+
+.first-place {
+    color: gold;
+}
+
+.second-place {
+    color: silver;
+}
+
+.third-place {
+    color: brown;
+}
+
+footer {
+    color: white;
+    background-color: steelblue;
+}
