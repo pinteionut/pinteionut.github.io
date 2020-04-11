@@ -187,4 +187,19 @@
 				}
 			});
 
+	// Form Submit
+
+	$('#order-form').submit( (e) => {
+		e.preventDefault();
+		$.ajax({
+			type: 'post',
+			url: 'https://script.google.com/macros/s/AKfycbxFfjKbQeSfI_nE90q8KXT5EYiK-r7yS3CPWPme/exec',
+			data: $('#order-form').serialize(),
+			success: function (data) {
+				alert('Submission was successful.');
+			},
+			error: function (data) {
+			}
+		});
+	})
 })(jQuery);
